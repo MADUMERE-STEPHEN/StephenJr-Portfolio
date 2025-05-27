@@ -86,6 +86,7 @@ body {
   color: #0e0e0e;
 }
 
+/* Social Links Section */
 .social-links {
   margin-top: 3rem;
   text-align: center;
@@ -95,24 +96,34 @@ body {
   color: #fff;
   font-weight: 600;
   font-size: 1.1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .social-links .d-flex {
-  gap: 1.5rem;
+  display: flex;
   justify-content: center;
+  gap: 1.2rem;
   flex-wrap: wrap;
 }
 
 .social-icon {
-  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #444;
+  border-radius: 50%;
   color: #f1f1f1;
-  transition: transform 0.2s ease, color 0.3s ease;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
 }
 
 .social-icon:hover {
-  transform: scale(1.15);
-  color: #fff;
+  background-color: #fff;
+  color: #0e0e0e;
+  transform: scale(1.1);
+  border-color: #fff;
 }
 
 @media (max-width: 576px) {
