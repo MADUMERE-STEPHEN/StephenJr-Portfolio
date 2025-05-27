@@ -6,6 +6,9 @@ import { WorksComponent } from './pages/works/works.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import AOS from 'aos';
+
+declare let gtag: Function;
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -22,8 +25,17 @@ import AOS from 'aos';
 })
 export class AppComponent implements OnInit{
   title = 'StephenJR-portfolio';
-   constructor(private router: Router) {}
 
+  constructor(private router: Router) {
+    router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        gtag('config', 'G-XXXXXXXXXX', {
+          page_path: event.urlAfterRedirects,
+        });
+      }
+    });
+
+  }
   ngOnInit(): void {
     AOS.init({ duration: 1000, once: true });
 
