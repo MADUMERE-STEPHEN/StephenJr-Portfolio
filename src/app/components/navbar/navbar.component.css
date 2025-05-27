@@ -1,0 +1,144 @@
+/* navbar.component.css */
+.custom-navbar {
+    background:#0b0b0b;
+    padding: 10px 20px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #bdbdbd;
+}
+
+.navbar-nav {
+    gap: 10px;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ddd;
+    padding: 8px 20px !important;
+    border-radius: 25px;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 20px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #606060, #c5c5c5);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.nav-link:hover::after {
+    width: calc(100% - 40px);
+}
+
+.nav-link.active {
+    color: #fff;
+}
+
+.nav-link.active::after {
+    width: calc(100% - 40px);
+    background: linear-gradient(90deg, #606060, #c5c5c5);
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 8px;
+    background: #0b0b0b;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    background: #606060;
+}
+
+.navbar-toggler-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.navbar-collapse {
+    transition: all 0.3s ease;
+}
+
+.active-link {
+  color: #ffffff !important; /* active link color — fix the black issue */
+  font-weight: 600;
+  border-bottom: 2px solid #ffffff;
+}
+@media (max-width: 991px) {
+    .custom-navbar {
+        width: 95%;
+        top: 10px;
+    }
+    .navbar-nav {
+        background: #0b0b0b;
+        padding: 15px;
+        border-radius: 20px;
+        margin-top: 10px;
+        border: 1px solid #6060604f;
+        text-align: center;
+    }
+    .nav-link {
+        padding: 10px !important;
+        margin: 5px 0;
+    }
+    .nav-link::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .nav-link:hover::after,
+    .nav-link.active::after {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+    .nav-link {
+        font-size: 0.9rem;
+    }
+    .custom-navbar {
+        padding: 8px 15px;
+    }
+}

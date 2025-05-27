@@ -1,0 +1,137 @@
+.resume-page {
+  color: #fff;
+  background-color: #0d0d0d;
+  font-family: 'Satoshi', sans-serif;
+  margin-top: 50px;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #fff;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+.resume-section {
+  margin-bottom: 3rem;
+}
+
+.resume-heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.resume-entry {
+  background: #121212;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #1f1f1f;
+  transition: transform 0.3s ease;
+}
+
+.resume-entry:hover {
+  transform: translateY(-4px);
+}
+
+.resume-entry h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 0.8rem;
+}
+
+.resume-entry p,
+.resume-entry ul {
+  font-size: 1rem;
+  color: #ccc;
+  margin: 0;
+}
+
+.resume-entry ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+.language-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.language-list li {
+  margin-bottom: 0.5rem;
+}
+/* Tablet devices (768px and below) */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .resume-heading {
+    font-size: 1.3rem;
+  }
+
+  .resume-entry {
+    padding: 1.2rem;
+  }
+
+  .resume-entry h4 {
+    font-size: 1.1rem;
+  }
+
+  .meta,
+  .resume-entry p,
+  .resume-entry ul {
+    font-size: 0.95rem;
+  }
+
+  .language-list {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .resume-heading {
+    font-size: 1.1rem;
+  }
+
+  .resume-entry {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .resume-entry h4 {
+    font-size: 1rem;
+  }
+
+  .meta,
+  .resume-entry p,
+  .resume-entry ul {
+    font-size: 0.9rem;
+  }
+
+  .language-list {
+    font-size: 0.95rem;
+  }
+}
