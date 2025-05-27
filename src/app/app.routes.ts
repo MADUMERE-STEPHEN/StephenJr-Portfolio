@@ -5,11 +5,11 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { WorksComponent } from './pages/works/works.component';
 
 export const routes: Routes = [ 
-  { path: '', redirectTo: '', pathMatch: 'full' }, // Redirect root to /about
-  { path: '', component: AboutComponent },
+  { path: '', redirectTo: 'about', pathMatch: 'full' }, // Redirect root to /about
+  { path: 'about', component: AboutComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'works', component: WorksComponent },
   { path: 'contact', component: ContactComponent },
-  { path: '**', redirectTo: '' } // Wildcard route redirects invalid paths to /about
+  { path: '**', redirectTo: 'about' } // Wildcard route redirects invalid paths to /about
 
 ];
