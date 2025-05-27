@@ -20,16 +20,19 @@ body {
   border: 1px solid #2c2c2c;
   padding: 3rem;
   border-radius: 12px;
+  margin: 0 auto;
 }
 
 .contact-title {
   font-size: 2.25rem;
   color: #fff;
+  text-align: center;
 }
 
 .contact-subtitle {
   color: #aaa;
   font-size: 1rem;
+  text-align: center;
   margin-bottom: 2rem;
 }
 
@@ -82,6 +85,36 @@ body {
   background-color: #fff;
   color: #0e0e0e;
 }
+
+.social-links {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.social-links h5 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.social-links .d-flex {
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  font-size: 1.7rem;
+  color: #f1f1f1;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.15);
+  color: #fff;
+}
+
 @media (max-width: 576px) {
   .contact-wrapper {
     padding: 2rem 1.5rem;
@@ -94,25 +127,8 @@ body {
   .submit-btn {
     width: 100%;
   }
-}
 
-
-
-
-.social-links h5 {
-  color: #fff;
-  font-family: 'Satoshi', sans-serif;
-  font-weight: 600;
-  font-size: 1.1rem;
-}
-
-.social-icon {
-  font-size: 1.7rem;
-  color: #f1f1f1;
-  transition: transform 0.2s ease, color 0.3s ease;
-}
-
-.social-icon:hover {
-  transform: scale(1.15);
-  color: #fff;
+  .social-links {
+    margin-top: 2rem;
+  }
 }
