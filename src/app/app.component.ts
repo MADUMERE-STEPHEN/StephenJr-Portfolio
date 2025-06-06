@@ -24,7 +24,7 @@ declare let gtag: Function;
   styleUrls: ['./app.component.css'] // ✅ fixed this line
 })
 export class AppComponent implements OnInit{
-  title = 'StephenJR-portfolio';
+  title = 'Stephen Madummere';
     constructor(private router: Router) {
     router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
