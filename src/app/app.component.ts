@@ -25,17 +25,8 @@ declare let gtag: Function;
 })
 export class AppComponent implements OnInit{
   title = 'StephenJR-portfolio';
+   constructor(private router: Router) {}
 
-  constructor(private router: Router) {
-    router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        gtag('config', 'G-XXXXXXXXXX', {
-          page_path: event.urlAfterRedirects,
-        });
-      }
-    });
-
-  }
   ngOnInit(): void {
     AOS.init({ duration: 1000, once: true });
 

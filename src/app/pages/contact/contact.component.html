@@ -1,31 +1,54 @@
-<section class="contact-section d-flex align-items-center justify-content-center py-5">
-  <div class="contact-wrapper" data-aos="fade-up">
+<section class="contact-section py-5">
+  <div class="container" data-aos="fade-up">
     <h2 class="contact-title text-center mb-3">Contact Me</h2>
     <p class="contact-subtitle text-center mb-4">Got a project or a question? Let's talk.</p>
 
-    <form
-      action="https://formspree.io/f/xovdozpa"
-      method="POST"
-      class="contact-form"
-    >
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required placeholder="Your full name" />
-      </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-6 mb-4">
+        <div class="contact-wrapper">
+          <form
+            action="https://formspree.io/f/xovdozpa"
+            method="POST"
+            class="contact-form"
+          >
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required placeholder="Your full name" />
+            </div>
 
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required placeholder="your@email.com" />
-      </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="your@email.com" />
+            </div>
 
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
-      </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
+            </div>
 
-      <div class="text-center">
-        <button type="submit" class="submit-btn">Send</button>
+            <div class="text-center">
+              <button type="submit" class="submit-btn">Send</button>
+            </div>
+          </form>
+          <div class="social-links mt-4">
+            <h5 class="mb-3 contact-subtitle">Or reach out through my socials</h5>
+            <div class="d-flex justify-content-center gap-4">
+              <a href="https://github.com/MADUMERE-STEPHEN" target="_blank" class="social-icon" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/stephen-junior-madumere-926b86324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/stephen_madumere?igsh=YzljYTk1ODg3Zg==" target="_blank" class="social-icon" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://x.com/MadumereJunior" target="_blank" class="social-icon" aria-label="Twitter">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </form>
+    </div>
   </div>
 </section>
